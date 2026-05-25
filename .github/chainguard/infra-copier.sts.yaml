@@ -1,0 +1,6 @@
+issuer: https://token.actions.githubusercontent.com
+subject_pattern: ^repo:fohte/infra:.*$
+claim_pattern:
+  job_workflow_ref: ^fohte/infra/\.github/workflows/(terraform-apply|terraform-test)\.yml@[^@]+$
+permissions:
+  contents: write
