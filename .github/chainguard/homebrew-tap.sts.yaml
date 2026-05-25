@@ -1,0 +1,6 @@
+issuer: https://token.actions.githubusercontent.com
+subject_pattern: ^repo:fohte/homebrew-tap:ref:refs/heads/[^:]+$
+repositories:
+  - homebrew-tap
+permissions:
+  contents: write
