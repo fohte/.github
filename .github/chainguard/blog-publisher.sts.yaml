@@ -1,0 +1,6 @@
+issuer: https://token.actions.githubusercontent.com
+subject_pattern: ^repo:fohte/blog-publisher:ref:refs/heads/[^:]+$
+repositories:
+  - blog-publisher
+permissions:
+  contents: write
