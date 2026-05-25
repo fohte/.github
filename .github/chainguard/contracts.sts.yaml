@@ -1,0 +1,6 @@
+issuer: https://token.actions.githubusercontent.com
+subject_pattern: ^repo:fohte/contracts:ref:refs/heads/[^:]+$
+repositories:
+  - contracts
+permissions:
+  contents: write
