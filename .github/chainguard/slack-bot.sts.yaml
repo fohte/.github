@@ -1,0 +1,6 @@
+issuer: https://token.actions.githubusercontent.com
+subject_pattern: ^repo:fohte/slack-bot:ref:refs/heads/[^:]+$
+repositories:
+  - slack-bot
+permissions:
+  contents: write
