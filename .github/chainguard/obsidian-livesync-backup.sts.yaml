@@ -1,5 +1,7 @@
 issuer: https://token.actions.githubusercontent.com
-subject_pattern: ^repo:fohte/obsidian-livesync-backup:ref:refs/heads/[^:]+$
+subject_pattern: ^repo:fohte/obsidian-livesync-backup:ref:refs/heads/.+$
+claim_pattern:
+  job_workflow_ref: ^fohte/obsidian-livesync-backup/\.github/workflows/test\.yml@[^@]+$
 repositories:
   - obsidian-livesync-backup
 permissions:
