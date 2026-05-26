@@ -1,0 +1,8 @@
+issuer: https://token.actions.githubusercontent.com
+subject_pattern: ^repo:fohte/infra:pull_request$
+claim_pattern:
+  job_workflow_ref: ^fohte/infra/\.github/workflows/renovate-copier\.yml@[^@]+$
+repositories:
+  - infra
+permissions:
+  contents: write
