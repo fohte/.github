@@ -1,5 +1,7 @@
 issuer: https://token.actions.githubusercontent.com
-subject_pattern: ^repo:fohte/contracts:ref:refs/heads/[^:]+$
+subject_pattern: ^repo:fohte/contracts:ref:refs/heads/.+$
+claim_pattern:
+  job_workflow_ref: ^fohte/contracts/\.github/workflows/test\.yml@[^@]+$
 repositories:
   - contracts
 permissions:
