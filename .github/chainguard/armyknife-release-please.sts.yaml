@@ -1,0 +1,9 @@
+issuer: https://token.actions.githubusercontent.com
+subject_pattern: ^repo:fohte/armyknife:ref:refs/heads/master$
+claim_pattern:
+  job_workflow_ref: ^fohte/armyknife/\.github/workflows/release-please\.yml@[^@]+$
+repositories:
+  - armyknife
+permissions:
+  contents: write
+  pull_requests: write
