@@ -1,0 +1,8 @@
+issuer: https://token.actions.githubusercontent.com
+subject_pattern: ^repo:fohte/runok-claude-code-plugin:pull_request$
+claim_pattern:
+  job_workflow_ref: ^fohte/runok-claude-code-plugin/\.github/workflows/renovate-copier\.yml@[^@]+$
+repositories:
+  - runok-claude-code-plugin
+permissions:
+  contents: write
