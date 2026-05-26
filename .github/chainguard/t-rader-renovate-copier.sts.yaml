@@ -1,0 +1,8 @@
+issuer: https://token.actions.githubusercontent.com
+subject_pattern: ^repo:fohte/t-rader:pull_request$
+claim_pattern:
+  job_workflow_ref: ^fohte/t-rader/\.github/workflows/renovate-copier\.yml@[^@]+$
+repositories:
+  - t-rader
+permissions:
+  contents: write
