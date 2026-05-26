@@ -1,0 +1,8 @@
+issuer: https://token.actions.githubusercontent.com
+subject_pattern: ^repo:fohte/blog-publisher:pull_request$
+claim_pattern:
+  job_workflow_ref: ^fohte/blog-publisher/\.github/workflows/renovate-copier\.yml@[^@]+$
+repositories:
+  - blog-publisher
+permissions:
+  contents: write
