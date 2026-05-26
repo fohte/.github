@@ -1,5 +1,7 @@
 issuer: https://token.actions.githubusercontent.com
-subject_pattern: ^repo:fohte/renovate-config:ref:refs/heads/[^:]+$
+subject_pattern: ^repo:fohte/renovate-config:ref:refs/heads/.+$
+claim_pattern:
+  job_workflow_ref: ^fohte/renovate-config/\.github/workflows/test\.yml@[^@]+$
 repositories:
   - renovate-config
 permissions:
