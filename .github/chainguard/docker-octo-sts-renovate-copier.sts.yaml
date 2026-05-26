@@ -1,0 +1,8 @@
+issuer: https://token.actions.githubusercontent.com
+subject_pattern: ^repo:fohte/docker-octo-sts:pull_request$
+claim_pattern:
+  job_workflow_ref: ^fohte/docker-octo-sts/\.github/workflows/renovate-copier\.yml@[^@]+$
+repositories:
+  - docker-octo-sts
+permissions:
+  contents: write
