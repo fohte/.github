@@ -1,0 +1,8 @@
+issuer: https://token.actions.githubusercontent.com
+subject_pattern: ^repo:fohte/obsidian-livesync-backup:pull_request$
+claim_pattern:
+  job_workflow_ref: ^fohte/obsidian-livesync-backup/\.github/workflows/renovate-copier\.yml@[^@]+$
+repositories:
+  - obsidian-livesync-backup
+permissions:
+  contents: write
