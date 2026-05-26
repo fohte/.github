@@ -1,5 +1,7 @@
 issuer: https://token.actions.githubusercontent.com
-subject_pattern: ^repo:fohte/slack-bot:ref:refs/heads/[^:]+$
+subject_pattern: ^repo:fohte/slack-bot:ref:refs/heads/.+$
+claim_pattern:
+  job_workflow_ref: ^fohte/slack-bot/\.github/workflows/test\.yml@[^@]+$
 repositories:
   - slack-bot
 permissions:
