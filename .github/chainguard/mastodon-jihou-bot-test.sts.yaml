@@ -1,0 +1,8 @@
+issuer: https://token.actions.githubusercontent.com
+subject_pattern: ^repo:fohte/mastodon-jihou-bot:ref:refs/heads/.+$
+claim_pattern:
+  job_workflow_ref: ^fohte/mastodon-jihou-bot/\.github/workflows/test\.yml@[^@]+$
+repositories:
+  - mastodon-jihou-bot
+permissions:
+  contents: write
