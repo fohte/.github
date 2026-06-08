@@ -1,0 +1,8 @@
+issuer: https://token.actions.githubusercontent.com
+subject_pattern: ^repo:fohte/github-event-hub:ref:refs/heads/.+$
+claim_pattern:
+  job_workflow_ref: ^fohte/github-event-hub/\.github/workflows/test\.yml@[^@]+$
+repositories:
+  - github-event-hub
+permissions:
+  contents: write
