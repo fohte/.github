@@ -4,3 +4,6 @@ claim_pattern:
   job_workflow_ref: ^fohte/infra/\.github/workflows/(terraform-apply|terraform-test)\.yml@[^@]+$
 permissions:
   contents: write
+  # Required because the copier template (fohte/generic-boilerplate) ships
+  # `.github/workflows/*.yml`, which the initial push for a new repository must include.
+  workflows: write
