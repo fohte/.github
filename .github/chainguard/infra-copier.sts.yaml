@@ -3,4 +3,7 @@ subject_pattern: ^repo:fohte/infra:.*$
 claim_pattern:
   job_workflow_ref: ^fohte/infra/\.github/workflows/(terraform-apply|terraform-test)\.yml@[^@]+$
 permissions:
+  # copier テンプレート (fohte/generic-boilerplate) が `.github/workflows/*.yml` を
+  # 含むため、新規リポジトリの初回 push 時に workflows 権限が必要
   contents: write
+  workflows: write
