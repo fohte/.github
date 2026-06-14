@@ -1,8 +1,11 @@
 issuer: https://token.actions.githubusercontent.com
 subject_pattern: ^repo:fohte/meshi:ref:refs/heads/.+$
 claim_pattern:
-  job_workflow_ref: ^fohte/meshi/\.github/workflows/test\.yml@[^@]+$
+  job_workflow_ref: ^fohte/meshi/\.github/workflows/(test|bootstrap)\.yml@[^@]+$
 repositories:
   - meshi
 permissions:
   contents: write
+  # `bootstrap.yml` deletes itself (a file under `.github/workflows/`),
+  # which requires `workflows: write`.
+  workflows: write
