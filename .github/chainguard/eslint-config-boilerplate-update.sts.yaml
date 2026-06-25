@@ -1,7 +1,9 @@
 issuer: https://token.actions.githubusercontent.com
-subject_pattern: ^repo:fohte/eslint-config:ref:refs/heads/master$
+subject_pattern: ^repo:fohte/eslint-config:ref:refs/heads/(master|fohte/add-boilerplate-update-workflow)$
 claim_pattern:
   job_workflow_ref: ^fohte/eslint-config/\.github/workflows/boilerplate-update\.yml@[^@]+$
+  event_name: ^workflow_dispatch$
+  actor: ^fohte$
 repositories:
   - eslint-config
 permissions:
