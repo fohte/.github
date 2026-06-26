@@ -1,0 +1,8 @@
+issuer: https://token.actions.githubusercontent.com
+subject_pattern: ^repo:fohte/copier-update-action:pull_request$
+claim_pattern:
+  job_workflow_ref: ^fohte/copier-update-action/\.github/workflows/renovate-copier\.yml@[^@]+$
+repositories:
+  - copier-update-action
+permissions:
+  contents: write
