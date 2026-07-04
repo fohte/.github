@@ -1,0 +1,10 @@
+issuer: https://token.actions.githubusercontent.com
+subject_pattern: ^repo:fohte/obsidian-livesync-backup:ref:refs/heads/main$
+claim_pattern:
+  job_workflow_ref: ^fohte/obsidian-livesync-backup/\.github/workflows/boilerplate-update\.yml@[^@]+$
+repositories:
+  - obsidian-livesync-backup
+permissions:
+  contents: write
+  pull_requests: write
+  workflows: write
