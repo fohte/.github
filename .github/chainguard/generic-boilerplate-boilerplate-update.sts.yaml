@@ -1,0 +1,10 @@
+issuer: https://token.actions.githubusercontent.com
+subject_pattern: ^repo:fohte/generic-boilerplate:ref:refs/heads/master$
+claim_pattern:
+  job_workflow_ref: ^fohte/generic-boilerplate/\.github/workflows/boilerplate-update\.yml@[^@]+$
+repositories:
+  - generic-boilerplate
+permissions:
+  contents: write
+  pull_requests: write
+  workflows: write

@@ -1,0 +1,10 @@
+issuer: https://token.actions.githubusercontent.com
+subject_pattern: ^repo:fohte/slack-bot:ref:refs/heads/main$
+claim_pattern:
+  job_workflow_ref: ^fohte/slack-bot/\.github/workflows/boilerplate-update\.yml@[^@]+$
+repositories:
+  - slack-bot
+permissions:
+  contents: write
+  pull_requests: write
+  workflows: write

@@ -1,0 +1,10 @@
+issuer: https://token.actions.githubusercontent.com
+subject_pattern: ^repo:fohte/homebrew-tap:ref:refs/heads/main$
+claim_pattern:
+  job_workflow_ref: ^fohte/homebrew-tap/\.github/workflows/boilerplate-update\.yml@[^@]+$
+repositories:
+  - homebrew-tap
+permissions:
+  contents: write
+  pull_requests: write
+  workflows: write
