@@ -1,0 +1,8 @@
+issuer: https://token.actions.githubusercontent.com
+subject_pattern: ^repo:fohte/ddr-score-manager:pull_request$
+claim_pattern:
+  job_workflow_ref: ^fohte/ddr-score-manager/\.github/workflows/renovate-copier\.yml@[^@]+$
+repositories:
+  - ddr-score-manager
+permissions:
+  contents: write
