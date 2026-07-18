@@ -1,0 +1,6 @@
+issuer: https://oidc.home-k8s.fohte.net
+subject: system:serviceaccount:obsidian-livesync-backup:obsidian-livesync-backup
+repositories:
+  - obsidian-v2
+permissions:
+  contents: write
