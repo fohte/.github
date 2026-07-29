@@ -1,5 +1,5 @@
 issuer: https://token.actions.githubusercontent.com
-subject_pattern: ^repo:fohte/tq:pull_request$
+subject_pattern: ^repo:fohte(@11088009)?/tq(@1183869860)?:pull_request$
 claim_pattern:
   job_workflow_ref: ^fohte/tq/\.github/workflows/renovate-copier\.yml@[^@]+$
 repositories:
