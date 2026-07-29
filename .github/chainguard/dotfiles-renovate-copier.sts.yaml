@@ -1,5 +1,5 @@
 issuer: https://token.actions.githubusercontent.com
-subject_pattern: ^repo:fohte(@[0-9]+)?/dotfiles(@[0-9]+)?:pull_request$
+subject_pattern: ^repo:fohte(@11088009)?/dotfiles(@53254360)?:pull_request$
 claim_pattern:
   job_workflow_ref: ^fohte/dotfiles/\.github/workflows/renovate-copier\.yml@[^@]+$
 repositories:
