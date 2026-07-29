@@ -1,0 +1,8 @@
+issuer: https://token.actions.githubusercontent.com
+subject_pattern: ^repo:fohte/infractl:ref:refs/heads/.+$
+claim_pattern:
+  job_workflow_ref: ^fohte/infractl/\.github/workflows/test\.yml@[^@]+$
+repositories:
+  - infractl
+permissions:
+  contents: write
