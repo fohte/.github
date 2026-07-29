@@ -1,5 +1,5 @@
 issuer: https://token.actions.githubusercontent.com
-subject_pattern: ^repo:fohte/gmail-filters:pull_request$
+subject_pattern: ^repo:fohte(@[0-9]+)?/gmail-filters(@[0-9]+)?:pull_request$
 claim_pattern:
   job_workflow_ref: ^fohte/gmail-filters/\.github/workflows/renovate-copier\.yml@[^@]+$
 repositories:

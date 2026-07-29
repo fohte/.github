@@ -1,5 +1,5 @@
 issuer: https://token.actions.githubusercontent.com
-subject_pattern: ^repo:fohte/generic-boilerplate:ref:refs/heads/.+$
+subject_pattern: ^repo:fohte(@[0-9]+)?/generic-boilerplate(@[0-9]+)?:ref:refs/heads/.+$
 claim_pattern:
   job_workflow_ref: ^fohte/generic-boilerplate/\.github/workflows/validate-template\.yml@[^@]+$
 repositories:

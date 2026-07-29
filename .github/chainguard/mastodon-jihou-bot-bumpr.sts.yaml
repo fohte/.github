@@ -1,5 +1,5 @@
 issuer: https://token.actions.githubusercontent.com
-subject_pattern: ^repo:fohte/mastodon-jihou-bot:(ref:refs/heads/master|pull_request)$
+subject_pattern: ^repo:fohte(@[0-9]+)?/mastodon-jihou-bot(@[0-9]+)?:(ref:refs/heads/master|pull_request)$
 claim_pattern:
   job_workflow_ref: ^fohte/mastodon-jihou-bot/\.github/workflows/bumpr\.yml@[^@]+$
 repositories:

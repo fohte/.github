@@ -1,5 +1,5 @@
 issuer: https://token.actions.githubusercontent.com
-subject_pattern: ^repo:fohte/renovate-config:ref:refs/heads/master$
+subject_pattern: ^repo:fohte(@[0-9]+)?/renovate-config(@[0-9]+)?:ref:refs/heads/master$
 claim_pattern:
   job_workflow_ref: ^fohte/renovate-config/\.github/workflows/boilerplate-update\.yml@[^@]+$
 repositories:
