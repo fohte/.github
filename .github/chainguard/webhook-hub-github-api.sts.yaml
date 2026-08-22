@@ -1,0 +1,9 @@
+issuer: https://oidc.home-k8s.fohte.net
+subject: system:serviceaccount:webhook-hub:webhook-hub
+# repositories is intentionally omitted to cover the whole fohte org, since
+# webhook-hub receives events from many repos and listing them would need
+# manual upkeep as repos are added. Scope is instead limited via
+# read-only permissions below.
+permissions:
+  actions: read
+  pull_requests: read
