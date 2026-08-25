@@ -1,8 +1,0 @@
-issuer: https://token.actions.githubusercontent.com
-subject_pattern: ^repo:fohte(@11088009)?/renovate-config(@694739672)?:ref:refs/heads/.+$
-claim_pattern:
-  job_workflow_ref: ^fohte/renovate-config/\.github/workflows/sync-generic-boilerplate\.yml@[^@]+$
-repositories:
-  - renovate-config
-permissions:
-  contents: write
