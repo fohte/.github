@@ -1,8 +1,0 @@
-issuer: https://token.actions.githubusercontent.com
-subject_pattern: ^repo:fohte@11088009/storybook-addon@1335854307:ref:refs/heads/.+$
-claim_pattern:
-  job_workflow_ref: ^fohte/storybook-addon/\.github/workflows/bootstrap\.yml@[^@]+$
-repositories:
-  - storybook-addon
-permissions:
-  contents: write
