@@ -6,4 +6,5 @@ subject: system:serviceaccount:webhook-hub:webhook-hub
 # read-only permissions below.
 permissions:
   actions: read
+  checks: read
   pull_requests: read
